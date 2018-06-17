@@ -24,9 +24,9 @@ app.use(session({resave: true, saveUninitialized: true,secret: 'gdp'}));
 //cors
 app.use(cors())
 // view engine setup
-app.set("views", path.resolve(__dirname, "views")); // path to views
-app.use(express.static(path.join(__dirname, 'views')));
-app.set('views', path.join(__dirname, 'views'));
+app.set("views", path.resolve(__dirname, "frontend/dist")); // path to views
+app.use(express.static(path.join(__dirname, 'frontend/dist')));
+app.set('views', path.join(__dirname, 'frontend/dist'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
