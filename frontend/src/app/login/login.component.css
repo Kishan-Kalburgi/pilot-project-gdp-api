@@ -1,0 +1,6 @@
+/* padding for login form to make it center */
+.loginContainer {
+    padding-left: 30em;
+    padding-right: 29em;
+    padding-top: 6em;
+}
